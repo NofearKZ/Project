@@ -4,7 +4,7 @@
     width:100%;
     flex-direction: row;
     justify-content: space-between;
-    background-color: #faf7f7
+    background-color: #faf7f7;
 }
 
 .navbar ul{
@@ -175,17 +175,26 @@ p:hover {
     transition: 0.7s ease;
 }
 
-footer {
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
 }
 
-footer a {
+.footer a {
     margin-right: 10px;
+}
+
+.burger {
+    display: none;
 }
  
 @media (max-width: 700px) {
+   
+    .form form fieldset {
+        width:80%;
+    }
+   
     .container {
         display: flex;
         flex-direction: column;
@@ -232,7 +241,7 @@ footer a {
         margin-bottom: 0;
     }
 
-    h2 {
+    .h2 {
         margin: 10px;
         text-align: center;
     }
@@ -257,11 +266,148 @@ footer a {
         width: 95%;
         height: auto;
     }
+    .burger {
+        display: block;
+        position: relative;
+        width: 40px;
+        height: 40px;
+        margin: auto;
+        margin-left: 20px;
+        margin-right: 5px;
+    }
+
+    .burger span{
+        position: absolute;
+        width: 30px;
+        left: 5px;
+        height: 3px;
+        background-color: black;
+        bottom: 20px;
+    }
+
+    .burger span:nth-child(1) {
+        transform: translateY(-10px);
+
+    }
+
+    .burger span:nth-child(3) {
+        transform: translateY(10px);
+    }
+
+    .navbar ul  {
+        position: absolute;
+        background: radial-gradient(circle at top left, rgb(235, 224, 142), rgb(161, 222, 225), rgb(80, 173, 224));
+        flex-direction: column;
+        width: 30%;
+        height: auto;
+        top: 68px;
+        left: -40%;
+        z-index: 2;
+    }
+
+    .navbar ul li {
+        margin-top: 10px;
+    }
+
+    .navbar ul li:hover {
+        background-color: black;
+        transform: scale(1.07);
+        transition: 0.4s ease;
+        border-radius: 5%;
+    }
+
+    .navbar ul li a:hover {
+        color:white;
+    }
+
+    .navbar ul li:nth-child(1) {
+        margin-top: 20px;
+    }
+
+    .navbar ul li a {
+        margin-left: 0;
+        font-size: 1.2rem;
+    }
+
+    .navbar .open ul {
+        transform: translateX(100%);
+        transition: 0.7s ease-in-out;
+    }
+
+    .navbar.open .burger  span:nth-child(1) {
+        transform: translateY(0) rotate(45deg);
+    }
+
+    .navbar.open .burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.open .burger span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+
+    .navbar.open ul {
+        transform: translateX(100%);
+        transition: 0.7s ease-in-out;
+    }
+
+    .navbar.open .burger span:nth-child(1) {
+        transform:  translateY(0) rotate(45deg);
+
+    }
+
+    .navbar.open .burger span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .navbar.open .burger span:nth-child(3) {
+        transform: translateY(0) rotate(-45deg);
+    }
+     
+    .navbar ul .work ul {
+        position: absolute;
+        flex-direction: column;
+        left: 10px;
+        top: 0;
+        width: 100px;
+        display: none;
+        padding: 0;
+        z-index: 20;
+    }
+
+    .navbar ul .work ul li {
+        margin-top: 0;
+        margin-bottom: 10px;
+        background-color: unset;
+        font-size: 11.2rem;
+        margin-left: 10px;
+        color: black;
+    }
+
+    .navbar ul .work ul li:hover {
+        background-color: black;
+    }
+
+    .navbar ul .work ul li:hover a:hover {
+        color: white;
+    }
+
+    .navbar ul .work:hover ul li a {
+        color: black;
+    }
+
+    
+
 
 
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
+    
+    .form form fieldset {
+        width: 65%;
+    }
+    
     .container img {
         margin-top: 20px;
         border-radius: 10%;
@@ -270,4 +416,74 @@ footer a {
         height: 200px;
         margin: auto;
     }
+}
+
+.navbar ul .work {
+    position: relative;
+    display: flex;
+    z-index: 10;
+}
+
+.navbar ul .work ul {
+    position: absolute;
+    flex-direction: column;
+    left: 0;
+    top: 100%;
+    width: 100px;
+    display: none;
+    padding: 0;
+    z-index: 20;
+}
+
+.navbar ul .work ul li {
+    z-index: 20;
+    background-color: #7cc6e5;
+    margin-bottom: 2px;
+}
+.navbar ul .work:hover ul {
+    display: block;
+}
+
+.navbar ul .work li:hover {
+    background-color: white;
+    border-radius: 0 ;
+}
+
+.form {
+    flex-direction: column;
+}
+
+.form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form form fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.form form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.form form button {
+    width: 200px;
+    font-size: 1.2rem;
+    background-color: #24779b;
+    color:white;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.form form button:hover {
+font-size: 1.2rem;
+background-color: #91130c;
+color: rgb(248,243,243);
 }
