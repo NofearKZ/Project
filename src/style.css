@@ -1,6 +1,6 @@
 .navbar {
     display:flex;
-    position:fixed;
+    position:absolute;
     width:100%;
     flex-direction: row;
     justify-content: space-between;
@@ -48,7 +48,7 @@
 }
 
 .container {
-    display:flex;
+    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
@@ -72,15 +72,15 @@
 }
 
 body {
-    background-color: #faf7f7;
+    background-color: #f5eab9;
 }
 
 main {
-    background: linear-gradient(90deg, rgba(254,254,255,1) 0%, rgba(226,237,233,0,72) 37%, rgba(208,238,243,1) 100%);
+    background: linear-gradient(90deg, rgb(208, 208, 240) 0%, rgba(226,237,233,72) 37%, rgba(208,238,243,1) 100%);
 }
 
 p {
-    text-align: justify;
+    text-align:justify;
     font-size: 1.2rem;
     font-weight: normal;
     margin-right: 20px;
@@ -138,7 +138,7 @@ p:hover {
 .audio1 img, .audio2 img, .audio3 img {
     margin: auto;
     border-radius: 10%;
-    box-shadow:5px 5px 5px #7cc6e5;
+    box-shadow:10px 10px 10px #7cc6e5;
 }
 
 .container-book {
@@ -155,7 +155,7 @@ p:hover {
 .book1 img, .book2 img, .book3 img {
     margin: auto;
     border-radius: 10%;
-    box-shadow: 5px 5px 5px #7cc6e5;
+    box-shadow: 10px 10px 10px #7cc6e5;
     margin-bottom: 10px;
 }
 
@@ -167,7 +167,7 @@ p:hover {
 }
 
 .book1 img:hover, .book2 img:hover, .book3 img:hover {
-    box-shadow: 5px 5px 5px #888;
+    box-shadow: 10px 10px 10px #888;
 }
 
 .book1 a:hover, .book2 a:hover, .book3 a:hover {
@@ -190,7 +190,51 @@ p:hover {
 }
  
 @media (max-width: 700px) {
+    .API .NewYork {
+        width:100%;
+    }
+
+    .API .Moscow {
+        width: 100%;
+    }
+
+    .API .Petro {
+        width:100%;
+    }
+
+    .API .Petro span {
+        font-size: 1.05rem;
+    }
+
+    .API .NewYork span {
+        font-size: 1.05rem;
+    
+    }
+
+    .API .Moscow span {
+        font-size: 1.05rem;
+    }
+
+    .API .Tokyo {
+        width: 100%;
+    }
+
+    .API .Tokyo span {
+        font-size: 1.05rem;
+    }
+
+    .API .Krym {
+        width: 100%;
+    }
+
+    .API .Krym span {
+        font-size: 1.05rem;
+    }
    
+    .math form fieldset {
+        width: 70%;
+    }
+    
     .form form fieldset {
         width:80%;
     }
@@ -403,6 +447,62 @@ p:hover {
 }
 
 @media (min-width: 700px) and (max-width: 900px) {
+
+    .API .NewYork {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .API .NewYork img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .API .Moscow {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .API .Moscow img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .API .Tokyo {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .API .Tokyo img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .API .Krym {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+
+    .API .Krym img, span {
+        margin: auto;
+        width: 50%;
+        height: auto;
+    }
     
     .form form fieldset {
         width: 65%;
@@ -416,6 +516,79 @@ p:hover {
         height: 200px;
         margin: auto;
     }
+    .API {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .API .Petro {
+        display: flex;
+        flex-direction: row;
+        width: 70%;
+        margin: auto;
+        margin-bottom: 40px;
+        padding-top: 20px;
+    }
+
+    .API .Petro img, span {
+        margin:auto;
+        width: 50%;
+        height: auto;
+    }
+
+    .API .Petro img {
+        border-radius: 8px;
+
+    }
+
+    .API .NewYork img {
+        border-radius: 8px;
+
+    }
+
+    .API .Moscow img {
+        border-radius: 8px;
+    }
+
+    .API .Petro span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .API .NewYork span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .API .Moscow span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .API .Tokyo img {
+        border-radius: 8px;
+    }
+
+    .API .Krym img {
+        border-radius: 8px;
+    }
+
+    .API .Tokyo span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .API .Krym span {
+        display: inline;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    
 }
 
 .navbar ul .work {
@@ -487,3 +660,73 @@ font-size: 1.2rem;
 background-color: #91130c;
 color: rgb(248,243,243);
 }
+
+.math {
+    display: flex;
+
+}
+
+.math form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.math form fieldset {
+    display: flex;
+    width: 50%;
+    margin: auto;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.math form fieldset legend {
+    text-align: center;
+    font-size: 1.2rem;
+}
+.math form fieldset .butcont {
+    display: flex;
+    flex: row;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.math form fieldset .butcont button {
+    display: block;
+    width: 20px;
+    box-sizing: border-box;
+    height: 40px;
+    margin: auto;
+}
+.math form fieldset p {
+    display: flex;
+    margin: 0;
+}
+.math form fieldset p span {
+    margin: auto;
+    font-size: 1.2rem;
+}
+.math form fieldset .counters {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.math form fieldset .counters div {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-bottom: 20px;
+}
+.math form fieldset .counters div label, input {
+    margin: auto;
+    text-align: center;
+}
+.math form fieldset .counters div input {
+    width: 70%;
+    font-size: 1.1rem;
+    color: black;
+}
+

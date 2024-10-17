@@ -8,7 +8,7 @@
     </head>
   <body>
     <nav class = "navbar open">
-        <img src = "./src/public/images.png" width = 100 height = 50
+        <img src = "./src/public/Logo.png" width = 100 height = 50
          alt = "logo">
         <ul>
             <li><a href = "index.html">Home</a></li>
@@ -30,10 +30,44 @@
             <span></span>
         </div>
     </nav>
+    <main class = "math">
+        <form>
+            <fieldset>
+            <legend>Calculation</legend>
+            <div class = "counters">
+                <div>
+                    <label for = 'first'>First<br>number</label>
+                    <input type = "number" id='first' name = 'first' placeholder="0">
+                </div>
+            <div>
+                <label for ='second'>Second<br>number</label>
+                <input type = 'number' id = 'second' name = 'second' placeholder="0">
+             </div>
+            </div>
+            <div class = 'butcont'>
+                <button id = "butplus">+</button>
+                <button id = "butminus">-</button>
+                <button id = "butmult">*</button>
+                <button id = "butdiv">/</button>
+            </div>
+            <p><span id = "result">0</span></p>
+            </fieldset>
+        </form>
+        <form id="trigCalc">
+            <label for="angleInput">Enter angel (degrees):</label>
+            <input type="number" id="angleInput" placeholder="Angle in degrees" required>
+            <button type="button" id="sinBtn">Sin</button>
+            <button type="button" id="cosBtn">Cos</button>
+            <button type="button" id="tanBtn">Tan</button>
+            <button type="button" id="cotBtn">Cot</button>
+            <label for="result">Result</label>
+            <span id="result"></span>
+        </form>
+    </main>
     <footer>
-        <a href = "https://www.instagram.com/zhankuddi?igsh=aWZ6Y214eGF6MWs4"><img src="./src/public/png-clipart-logo-instagram-pinterest-facebook-inc-instagram-text-logo.png" width = 100 height = 100></a>
-        <a href = "https://www.facebook.com/profile.php?id=100046883840571"><img src="./src/public/png-clipart-computer-icons-facebook-inc-social-media-logo-facebook-rectangle-logo-thumbnail.png" width = 100 height = 100></a>
-        <a href = "https://youtube.com/@nofearkz786?si=SR-zRchuxniuIJmC"><img src="./src/public/Youtube_logo.png" width = 100 height = 100></a>
+        <a href = "https://www.instagram.com/zhankuddi?igsh=aWZ6Y214eGF6MWs4"><img src="./src/public/Instagram-outline-icon-logo-0٨.png" width = 50 height = 40></a>
+        <a href = "https://www.facebook.com/profile.php?id=100046883840571"><img src="./src/public/pngwing.com.png" width = 50 height = 40></a>
+        <a href = "https://youtube.com/@nofearkz786?si=SR-zRchuxniuIJmC"><img src="./src/public/Youtube_logo.png" width = 50 height = 40></a>
      </footer>
      <script src = "./js/script.js"></script>
-    
+     
